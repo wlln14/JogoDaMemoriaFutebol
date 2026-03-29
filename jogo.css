@@ -26,6 +26,18 @@ body{
     }
 }
 
+@media (max-height: 600px) {
+    .grid {
+        grid-template-columns: repeat(6, 1fr);
+    }
+}
+
+@media (max-height: 450px) {
+    .grid {
+        grid-template-columns: repeat(8, 1fr);
+    }
+}
+
 main {
     display: flex;
     flex-direction: column;
@@ -34,7 +46,6 @@ main {
     max-width: 100%;
     min-height: 100vh;
     padding: 0px 20px;
-
 }
 
 header {
